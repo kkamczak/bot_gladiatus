@@ -1,7 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 import time
-from functions import puts, log_in, get_cookies_values, save_cookies, get_character_view
+from functions import puts, log_in, get_cookies_values, save_cookies, get_character_view, get_user_password
 from settings import URL, MIN_HP
 import globals as GLOBALS
 import expeditions as EXPEDITION

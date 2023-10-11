@@ -184,7 +184,21 @@ def get_character_view(window):
     except Exception:
         print('Nie znaleziono przycisku Podgląd')
 
+def get_user_password():
+    with open('src/user.txt', 'r', encoding='utf-8') as file:
+        for line in file:
+            key, value = line.strip().split('=')
+            key = key.strip()
+            value = value.strip()
+
+            if key == 'user':
+                user = value
+            if key == 'password':
+                password = value
+    return user, password
+
 def log_in(window):
+    LOGIN, PASSWORD = get_user_password()
     # Find log in tab:
     try:
         login_button = window.find_element("xpath", "/html/body/div[1]/div/div/div/div[2]/div[2]/div[2]/div/ul/li[1]/span")
