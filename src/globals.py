@@ -1,0 +1,8 @@
+LEVEL = 0
+PAUSED = False
+DO_EXPEDITIONS = True
+DO_DUNGEONS = True
+DO_CP = True
+RUNNING = True
+CLOSING = False
+INFORMATIONS = ['', '', '']
